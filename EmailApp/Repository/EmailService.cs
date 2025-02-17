@@ -18,7 +18,6 @@ namespace EmailApp.Repository
         {
             try
             {
-                // Direct access to configuration values
                 var smtpServer = _configuration["EmailSettings:SmtpServer"];
                 var port = int.Parse(_configuration["EmailSettings:Port"]);
                 var FromMail = _configuration["EmailSettings:Username"];
